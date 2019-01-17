@@ -1,0 +1,85 @@
+.menu
+	&__nav
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__item
+		position: relative	
+		display: flex
+		align-items: center
+.item				
+	&__logo
+		font-size: 30px
+		font-weight: 700
+	&__link
+		padding-left: 30px
+		font-weight: 500
+	&__menu-burger
+		position: absolute
+		top: 50%
+		right: 15px
+		margin-top: 26px
+.link		
+	&__ref
+		color: $color-dark
+	.ref
+		&:hover
+			color: $color-active
+
+.menu-burger
+	z-index: 1
+	display: none
+	width: 30px
+	height: 37px
+	&__item
+		position: absolute
+		top: 50%
+		right: 0
+		width: 25px
+		height: 2px
+		transform: translateY(-50%)
+		background: $color-dark
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: -6px
+			z-index: 1
+			display: block
+			width: 25px
+			height: 2px
+			background: $color-dark
+			transition: all 1s	
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			top: 6px
+			z-index: 1
+			display: block
+			width: 25px
+			height: 2px
+			background: $color-dark
+			transition: all 1s
+	&:hover
+		cursor: pointer
+		.menu-burger__item
+			background: $color-active
+			&::before
+				background: $color-active
+			&::after
+				background: $color-active
+	&__close
+		background: transparent	
+		&::before
+			top: 0
+			transform: rotate(135deg)
+			transition: all 1s
+		&::after
+			top: 0
+			transform: rotate(-135deg)
+			transition: all 1s
+	&:hover
+		.menu-burger__close
+			background: transparent		
+							

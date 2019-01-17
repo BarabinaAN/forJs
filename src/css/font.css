@@ -1,0 +1,17 @@
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-Light.eot');
+	src: url('../fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueLTW1G-BdCn.otf');
+	font-weight: normal;
+	font-style: normal;
+}
