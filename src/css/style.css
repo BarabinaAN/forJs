@@ -35,14 +35,20 @@ input:focus, button:focus, textarea:focus, .slick-slide:focus, .slide-active:foc
     color: #fff;
     cursor: pointer; }
 
-.disign, .realize {
-  font-size: 11px;
-  padding-top: 5px;
-  text-align: right;
-  color: rgba(255, 255, 255, 0.4); }
-
-.disign {
-  margin-top: 10px; }
+.upward {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #008000;
+  text-align: center;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+  .upward:hover {
+    font-size: 20px;
+    cursor: pointer; }
 
 .wrap {
   display: -webkit-box;
@@ -102,39 +108,32 @@ body, button, input {
   font-weight: 400; }
 
 header {
-  position: absolute;
   z-index: 1;
   width: 100%;
   padding-bottom: 15px;
   background: #fff; }
 
 .main {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background: rgba(55, 204, 177, 0.5); }
 
 footer {
   position: relative;
-  height: 100px; }
-  footer::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #fff; }
+  height: 100px;
+  background: #fff; }
 
 .header__menu {
   padding-top: 51px; }
@@ -242,6 +241,10 @@ footer {
   .menu-burger:hover .menu-burger__close {
     background: transparent; }
 
+.main p {
+  padding: 10px 0;
+  font-size: 18px; }
+
 .main__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,7 +252,11 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 50%; }
+  width: 50%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
   .main__form .button {
     margin-left: 10px; }
 
